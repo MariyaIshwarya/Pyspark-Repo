@@ -8,4 +8,4 @@ df = spark.createDataFrame(data, columns)
 
 df.createOrReplaceTempView("people")
 
-spark.sql("SELECT * FROM people WHERE Age > 25").show()
+spark.sql("""SELECT * FROM people WHERE Age > 25""").show()
